@@ -1,0 +1,52 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Ubuntu;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-calc-container {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  display: grid;
+  background-color: lightgrey;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+}
+
+.display {
+  grid-column-start: 1;
+  grid-column-end: col4-end;
+  text-align: end;
+  margin: 10px;
+  letter-spacing: 5px;
+  font-size: 30px;
+}
+
+h1 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  text-align: center;
+}
