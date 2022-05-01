@@ -9,30 +9,36 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
     <!-- <link rel="manifest" href="site.webmanifest" /> -->
   </head>
   <body>
     <h1>The Cal-Cool-Ator</h1>
     <div class="main-calc-container">
-      <div class="display">12345678901234</div>
-      <div class="digit button zero">0</div>
-      <div class="digit button one">1</div>
-      <div class="digit button two">2</div>
-      <div class="digit button three">3</div>
-      <div class="digit button four">4</div>
-      <div class="digit button five">5</div>
-      <div class="digit button six">6</div>
-      <div class="digit button seven">7</div>
-      <div class="digit button eight">8</div>
-      <div class="digit button nine">9</div>
-      <div class="button" id="add">+</div>
-      <div class="button" id="minus">-</div>
-      <div class="button" id="multi">*</div>
-      <div class="button" id="divide">/</div>
-      <div class="button" id="clear">AC</div>
-      <div class="button" id="equals">=</div>
-      <div class="button" id="backspace"><=</div>
-      <div class="button" id="dot">.</div>
+      <div class="display">12345678901</div>
+      <div class="digit button zero" data-key="96">0</div>
+      <div class="digit button one" data-key="97">1</div>
+      <div class="digit button two" data-key="98">2</div>
+      <div class="digit button three" data-key="99">3</div>
+      <div class="digit button four" data-key="100">4</div>
+      <div class="digit button five" data-key="101">5</div>
+      <div class="digit button six" data-key="102">6</div>
+      <div class="digit button seven" data-key="103">7</div>
+      <div class="digit button eight" data-key="104">8</div>
+      <div class="digit button nine" data-key="105">9</div>
+      <div class="button" id="add" data-key="107">+</div>
+      <div class="button" id="minus" data-key="109">-</div>
+      <div class="button" id="multi" data-key="106">*</div>
+      <div class="button" id="divide" data-key="111">/</div>
+      <div class="button" id="clear" data-key="46">AC</div>
+      <div class="button" id="equals" data-key="13">=</div>
+      <div class="button" id="backspace" data-key="8"><=</div>
+      <div class="button" id="dot" data-key="110">.</div>
     </div>
   </body>
   <script src="script.js"></script>

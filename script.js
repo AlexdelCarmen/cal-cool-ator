@@ -1,4 +1,9 @@
+let displayArray = [];
+
+const display = document.querySelector(".display");
 const buttons = document.querySelectorAll(".button");
+
+display.textContent = 0;
 
 console.log(buttons);
 
@@ -14,3 +19,15 @@ buttons.forEach((button) =>
 );
 
 buttons.forEach((button) => button.addEventListener("transitionend", pressEnd));
+
+function keyPress(e) {
+  const keys = document.querySelector(`.button[data-key='${e.keyCode}']`);
+  if (!keys) return;
+  keys.classList.add("pressed");
+  console.log(e.key);
+  displayArray.push(e.key);
+  let displayContent = displayArray.toString();
+  display.textContent = displayContent.replaceAll(",", "");
+}
+
+window.addEventListener("keydown", keyPress);
