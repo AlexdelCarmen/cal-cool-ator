@@ -4,42 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cal-Cool-Ator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <link rel="manifest" href="site.webmanifest" /> -->
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>The Cal-Cool-Ator</h1>
-    <div class="main-calc-container">
-      <div class="display">12345678901</div>
-      <div class="digit button zero" data-key="96">0</div>
-      <div class="digit button one" data-key="97">1</div>
-      <div class="digit button two" data-key="98">2</div>
-      <div class="digit button three" data-key="99">3</div>
-      <div class="digit button four" data-key="100">4</div>
-      <div class="digit button five" data-key="101">5</div>
-      <div class="digit button six" data-key="102">6</div>
-      <div class="digit button seven" data-key="103">7</div>
-      <div class="digit button eight" data-key="104">8</div>
-      <div class="digit button nine" data-key="105">9</div>
-      <div class="button" id="add" data-key="107">+</div>
-      <div class="button" id="minus" data-key="109">-</div>
-      <div class="button" id="multi" data-key="106">*</div>
-      <div class="button" id="divide" data-key="111">/</div>
-      <div class="button" id="clear" data-key="46">AC</div>
-      <div class="button" id="equals" data-key="13">=</div>
-      <div class="button" id="backspace" data-key="8"><=</div>
-      <div class="button" id="dot" data-key="110">.</div>
+    <div class="calculator-grid">
+      <div class="output">
+        <div class="previous-operand"></div>
+        <div class="current-operand"></div>
+        <button class="two-span">AC</button>
+        <button>DEL</button>
+        <button>÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>x</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>+</button>
+        <button>.</button>
+        <button>0</button>
+        <button>=</button>
+      </div>
     </div>
   </body>
-  <script src="script.js"></script>
 </html>
